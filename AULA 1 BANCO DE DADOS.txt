@@ -1,0 +1,47 @@
+o banco de dados do sql server pode criar dois tipos de arquivos, sendo:
+
+
+            CRIANDO UM BANCO DE DADOS
+primario: arquivo padrao de banco de dados (.mdf)
+secondary: arquivo auxiliar do banco de dados (.ndf)
+log: arquivo utilizado para guaradar as informações referentes aos registros de transação (.ldf)
+
+
+		CRIACÃO DE TABELAS4
+
+
+o nome de uma tabela em um banco de dados deverá ser unico para cada proprietario
+
+podem ser usados espaços e identificadores para fazer reerencia a esses objetos, e deve-se usar apas duplas ou colchetes; (SEM_ESPAÇO)[com espaço]
+
+
+TIPOS DE DADOS:  String tipo: char e varchar = armazena string de tamanho fixo até 8000 characteres, ou de tamanho variavel, sendo var char.
+BINÁrio: binary(n) armazena valores binarios de tamanho fixo, varbinary: armazena binarios com possiveis variaveis.
+INTEIRO: INT:armazena valores intteiros em 4 bytes no intervalo
+         smallint: armazena valores inteiros em 2 bytes no intervalo
+         tinyint: armazena valores inteiros em 1 byte no intervalo de 0 a 255. 
+
+
+CREATE TABLE aluno (
+
+matricula INT NOT NULL,
+nome VARCHAR (150) NOT NULL,
+datanasc DATETIME NOT NULL,
+email VARCHAR (100), 
+cpf CHAR (11) NOT NULL,
+celular CHAR (11) NOT NULL)
+
+CREATE TABLE mensalidade (
+descrição VARCHAR NOT NULL,
+valor CHAR NOT NULL ,
+caracteristica CHAR NOT NULL
+)
+
+CREATE TABLE academia (
+razaosocial CHAR NOT NULL,
+cnpj CHAR NOT NULL,
+endereço CHAR NOT NULL,
+cidade CHAR NOT NULL,
+estado CHAR NOT NULL,
+telefone INT NOT NULL,
+)
