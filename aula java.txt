@@ -1,0 +1,8 @@
+aula java 11/03
+
+usa-se @Entity para declarar que uma classe java está relacionada ao banco de dados
+
+@Entity
+@Table (name = "tbfilme")
+
+@table é usado para alterar o nome da tabela, que por default é o nome da classe
